@@ -1,0 +1,195 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#sidebar-wrapper img{
+    margin-left: 80px;
+}
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 80px;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+.card h2{
+    text-align: center;}
+.card p{
+    font-size: 1.4em;
+    color : #666666;}
+.up{
+    color: green;}
+.down{
+    color: red;}
+
+table{
+    width: 100%;}
+    table thead{
+        background: #e82634;
+        color: white;}
+    table .odd{
+        background: #ddd;}
+    table tfoot{
+        background: #999;
+        color: white;   }
+
+.list-heroes{
+    margin: 0px;
+    padding: 0px;}
+    .list-heroes li{
+        background: #eeeeee;
+        border : 1px solid #ddd;
+        list-style: none;
+        padding: 4px;
+        cursor: pointer;}
+    .list-heroes li:hover{
+        background: #e82634;
+        color: white;}
+
+.bar{
+    height: 10px;
+    background: #555;
+    width: 100px;}
+    .bar span{
+        display: block;
+        height: 100%;
+        background: red;}
+    .bar span{
+        display: block;
+        height: 100%;
+        background: orange;}
+    .bar span.red{
+        background: red;}
+    .bar span.green{
+        background: green;}
+
+.hero-card{
+    background: #f4f4f4;
+    border: 3px solid #eeeeee;
+    text-align:center;
+    padding: 4px;}
+
+    .hero-card img{
+        border:3px solid white;
+    }
+    .hero-card h3{
+        line-height: 20px;
+    }
+    .hero-card h4{
+        color: #888889;
+    }
+    .hero-card ul li{
+        list-style: none;
+        text-align:left;
+    }

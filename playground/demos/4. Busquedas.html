@@ -1,0 +1,33 @@
+<h3>2 tipos de búsqueda : </h3>
+<label>Por cualquier campo</label>
+<input type="text" class="form-control" ng-model="general_filter.$" placeholder="Ingresa tu búsqueda"> 
+<label>Por un campo en específico</label>
+<input type="text" class="form-control" ng-model="general_filter.name" placeholder="Superhéroe"> 
+<input type="text" class="form-control" ng-model="general_filter.realname" placeholder="Identidad"> 
+
+<h3>Ordernar por : </h3>
+<select ng-model="orderSuperheroes"  ng-init="orderSuperheroes='name'">
+  <option value="name">Superhéroe</option>
+  <option value="realname">Identidad</option>
+</select>
+
+<table>
+  <thead>
+    <tr>
+      <th>Superhéroe</th>
+      <th>Identidad secreta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="superhero in superheroes_filtered =  (superheroes | filter : general_filter | orderBy: orderSuperheroes:false ) " ng-class="cls($index)">
+      <td>{{superhero.name}}</td>
+      <td>{{superhero.realname}}</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Elementos encontrados : {{superheroes_filtered.length}}</td>
+      <td></td>
+    </tr>
+  </tfoot>
+</table>
